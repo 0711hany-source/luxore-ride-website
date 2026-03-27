@@ -616,21 +616,14 @@ footer {
     }
     .nav-links {
         display: none; /* In a real app, this would be a hamburger menu */
-    }
     /* Simple mobile nav override to keep it accessible */
     .nav-container {
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     .nav-links {
-        width: 100%;
-        justify-content: center;
-        margin-top: 10px;
-        gap: 15px;
-    }
-    #navbar.nav-compact .nav-links {
-        width: auto;
-        margin-top: 0;
+        display: none !important;
     }
     .logo img {
         height: 60px;
@@ -654,6 +647,12 @@ footer {
         font-size: 1rem;
     }
     .contact-form-wrapper {
-        padding: 20px;
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    .form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }
