@@ -576,7 +576,19 @@ footer {
     }
     .form-row {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        padding: 15px;
+        font-size: 16px; /* 16px prevents iOS auto-zoom on focus */
+        border-radius: 12px;
+    }
+    .contact-form button[type="submit"] {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.1rem;
     }
     .nav-links {
         display: none; /* In a real app, this would be a hamburger menu */
