@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in-scroll').forEach(el => {
+    document.querySelectorAll('.fade-in-scroll, .fade-in-scroll-stagger').forEach(el => {
         observer.observe(el);
     });
 });
