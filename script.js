@@ -1,22 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar scroll effect
     const navbar = document.getElementById('navbar');
+    let lastScrollY = window.scrollY;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+        const currentScrollY = window.scrollY;
+        
+        // Smart Navbar
+        if (currentScrollY <= 50) {
+            navbar.classList.remove('nav-hidden', 'nav-compact');
+        } else if (currentScrollY > lastScrollY) {
+            // Scrolling down -> hide navbar fully
+            navbar.classList.add('nav-hidden');
+            navbar.classList.remove('nav-compact');
+        } else if (currentScrollY < lastScrollY) {
+            // Scrolling up -> show compact navbar
+            navbar.classList.remove('nav-hidden');
+            navbar.classList.add('nav-compact');
+        }
+        
+        // Background Glass
+        if (currentScrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+        
+        lastScrollY = currentScrollY;
     });
 
-    // Intersection Observer for scroll animations
     const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
     };
 
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
@@ -25,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.fade-in-scroll').forEach(element => {
-        observer.observe(element);
+    document.querySelectorAll('.fade-in-scroll').forEach(el => {
+        observer.observe(el);
     });
 });
