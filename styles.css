@@ -615,7 +615,8 @@ footer {
         font-size: 1.1rem;
     }
     .nav-links {
-        display: none; /* In a real app, this would be a hamburger menu */
+        display: none !important;
+    }
     /* Simple mobile nav override to keep it accessible */
     .nav-container {
         flex-direction: row;
