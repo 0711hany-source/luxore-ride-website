@@ -563,8 +563,31 @@ footer {
     .section-split {
         flex-direction: column;
     }
-    .services-grid, .fleet-grid {
+    .services-grid {
         grid-template-columns: 1fr;
+    }
+    .fleet-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    .fleet-card {
+        padding: 15px;
+        text-align: center;
+    }
+    .fleet-img {
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .fleet-info h3 {
+        font-size: 0.95rem;
+    }
+    .fleet-info p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     .price-row {
         flex-direction: column;
@@ -575,8 +598,9 @@ footer {
         font-size: 2rem;
     }
     .form-row {
-        flex-direction: column;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
     .contact-form input,
     .contact-form select,
