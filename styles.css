@@ -533,8 +533,11 @@ footer {
 
 /* Responsive */
 @media (max-width: 900px) {
+    #navbar {
+        padding: 10px 0;
+    }
     .section-black, .section-dark {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     .section-split {
         flex-direction: column;
@@ -560,24 +563,30 @@ footer {
     /* Simple mobile nav override to keep it accessible */
     .nav-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 5px;
     }
     .nav-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 12px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 5px;
+        font-size: 0.9rem;
     }
     .logo img {
-        height: 100px;
+        height: 60px;
+    }
+    #hero {
+        height: auto;
+        min-height: 400px;
+        padding-bottom: 60px;
     }
     .hero-content {
-        padding-top: 140px;
+        padding-top: 100px;
     }
     .logo-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .hero-subtitle {
         font-size: 1rem;
