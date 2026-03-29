@@ -30,6 +30,29 @@ body {
     overflow-x: hidden;
 }
 
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+#preloader img {
+    width: 180px;
+    animation: pulseLoader 2.5s infinite ease-in-out;
+}
+@keyframes pulseLoader {
+    0% { opacity: 0.5; transform: scale(0.97); }
+    50% { opacity: 1; transform: scale(1.03); filter: drop-shadow(0 0 15px rgba(255,255,255,0.2)); }
+    100% { opacity: 0.5; transform: scale(0.97); }
+}
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -448,14 +471,134 @@ body {
     font-size: 1rem;
 }
 .price-val {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
     color: #fff;
     white-space: nowrap;
 }
 .price-val .unit {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-sec);
+}
+.price-options {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    text-align: right;
+}
+.price-option-col {
+    display: flex;
+    flex-direction: column;
+}
+.price-title-small {
+    font-size: 0.8rem;
+    color: var(--text-sec);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+/* Minikosten Rechner */
+.calculator-panel {
+    background: linear-gradient(135deg, #111 0%, #050505 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 50px;
+}
+.calc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 30px;
+    align-items: center;
+}
+.calc-input {
+    text-align: left;
+}
+.calc-input label {
+    display: block;
+    color: var(--text-sec);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.calc-input select, .calc-input input {
+    width: 100%;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.calc-input select:focus, .calc-input input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.calc-result {
+    background: #000;
+    padding: 20px 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: right;
+    min-width: 220px;
+}
+
+/* Transparente Infos */
+.pricing-info {
+    margin-top: 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 60px;
+}
+.info-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.info-card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.info-card h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.info-card p {
+    color: var(--text-sec);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+.info-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.info-card li {
+    color: var(--text-sec);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.info-card li:last-child {
+    margin-bottom: 0;
+}
+.info-card li strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 3px;
 }
 
 /* Contact */
@@ -910,11 +1053,43 @@ footer {
         box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
     .price-row .price-val {
-        order: -1; /* Setzt den Preis ganz nach oben! */
-        font-size: 2.8rem;
+        font-size: 1.8rem;
         letter-spacing: -1px;
-        margin-bottom: -5px;
-        color: #fff; /* Reines Weiß für Apple Look */
+        margin-bottom: 0px;
+        color: #fff; 
+    }
+    .price-options {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 20px;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: 10px;
+        padding-top: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .price-option-col {
+        flex: 1;
+    }
+    .pricing-info {
+        margin-top: 60px;
+        padding-top: 40px;
+    }
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    .calculator-panel {
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+    .calc-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .calc-result {
+        text-align: center;
+        margin-top: 10px;
     }
     .price-desc h4 {
         font-size: 1.15rem;

@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Preloader Logic
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            setTimeout(() => {
+                preloader.style.opacity = '0';
+                preloader.style.visibility = 'hidden';
+            }, 500); // 500ms delay to ensure smooth transition
+        }
+    });
+
     const navbar = document.getElementById('navbar');
     let lastScrollY = window.scrollY;
 
@@ -80,4 +91,31 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initial trigger
         setTimeout(() => { fleetGrid.dispatchEvent(new Event('scroll')); }, 500);
     }
+
+    // Minikosten Rechner
+    const calcClass = document.getElementById('calc-class');
+    const calcKm = document.getElementById('calc-km');
+    const calcTotal = document.getElementById('calc-total');
+
+    function updatePrice() {
+        if(!calcClass || !calcKm || !calcTotal) return;
+        
+        let km = parseFloat(calcKm.value.replace(',', '.'));
+        if(isNaN(km) || km <= 0) {
+            calcTotal.textContent = '0,00 €';
+            return;
+        }
+
+        let rate = parseFloat(calcClass.value);
+        let price = km * rate;
+
+        if(price < 15) {
+            price = 15;
+        }
+
+        calcTotal.textContent = price.toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+    }
+
+    if(calcClass) calcClass.addEventListener('change', updatePrice);
+    if(calcKm) calcKm.addEventListener('input', updatePrice);
 });
