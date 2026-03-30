@@ -1127,8 +1127,20 @@ footer {
     .nav-container {
         justify-content: center;
     }
-    .nav-item {
+    .nav-item:not(.lang-switch) {
         display: none !important;
+    }
+    .lang-switch.nav-item {
+        display: flex !important;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.85rem;
+        background: rgba(255,255,255,0.05);
+        padding: 8px 12px;
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.1);
     }
     .logo img {
         height: 75px; /* Logo viel klarer und größer */
