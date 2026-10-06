@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /betreiber
+Sitemap: https://luxoreride.de/sitemap.xml

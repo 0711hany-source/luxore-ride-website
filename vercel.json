@@ -1,0 +1,69 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/mobile/:path*",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/mobile/:path*",
+      "permanent": false
+    },
+    {
+      "source": "/konto",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/konto",
+      "permanent": false
+    },
+    {
+      "source": "/ride",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/ride",
+      "permanent": false
+    },
+    {
+      "source": "/disposition",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/disposition",
+      "permanent": false
+    },
+    {
+      "source": "/betreiber",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/betreiber",
+      "permanent": false
+    },
+    {
+      "source": "/app-ansichten",
+      "destination": "https://luxore-ride-frankfurt.lucky-goose-6238.chatgpt.site/app-ansichten",
+      "permanent": false
+    },
+    {
+      "source": "/hilfe",
+      "destination": "/hilfe.html",
+      "permanent": false
+    },
+    {
+      "source": "/impressum",
+      "destination": "/impressum.html",
+      "permanent": false
+    },
+    {
+      "source": "/datenschutz",
+      "destination": "/datenschutz.html",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

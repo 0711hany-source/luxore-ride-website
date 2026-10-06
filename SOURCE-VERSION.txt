@@ -1,0 +1,5 @@
+Base project commit: 6926c50b20f6cf5bf91e1b9edfb02f13e948ceb3
+Website exported from current public landing page on 2026-10-06.
+Public project source archive: luxore-project-source.zip
+Archive sha256: 3acf06e5cdd59bc55d62fafcb7154330c626deae08dd582a9b8c3ace3fd2c0a0
+Operator contact is an example in the public source archive; real runtime settings remain private.
