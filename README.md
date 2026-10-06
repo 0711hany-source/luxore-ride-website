@@ -14,7 +14,7 @@ Prüfen: `node --test tests/*.test.ts tests/*.test.mjs`, `pnpm exec tsc --noEmit
 
 ## Veröffentlichung
 
-Die Unternehmenswebsite ist mit dem vorhandenen GitHub-/Vercel-Projekt verbunden. Die unabhängige Serverversion wird dafür vorbereitet. Eine dauerhafte entfernte Datenbank und deren Bestandsdatenübernahme sind noch offen. Ohne konfigurierte Datenbank zeigt die App einen klaren Umstellungshinweis und nimmt keine Online-Buchungen an. Sie verwendet keinen Ersatzserver. Anmeldung bleibt bis zum E-Mail-Versand deaktiviert. Einzelheiten: `docs/INDEPENDENT-DEPLOYMENT.md`.
+Die unabhängige Serverversion ist über das vorhandene GitHub-/Vercel-Projekt unter luxoreride.de veröffentlicht und live geprüft. Die kostenlose Turso-Datenbank ist geschützt mit Vercel Production verbunden; 18 Migrationen und 21 Geschäftstabellen sind angelegt. Die vollständige Bestandsdatenübernahme und Live-Prüfung fehlen noch. Bis zur kontrollierten Aktivierung zeigt die App einen klaren Umstellungshinweis und nimmt keine Online-Buchungen an. Sie verwendet keinen Ersatzserver. Anmeldung bleibt bis zum E-Mail-Versand deaktiviert. Einzelheiten: `docs/INDEPENDENT-DEPLOYMENT.md`.
 
 ## Apps
 
