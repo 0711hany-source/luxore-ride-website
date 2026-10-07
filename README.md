@@ -20,4 +20,4 @@ Der aktuelle Vercel-Hobby-Tarif erlaubt laut Anbieter keinen kommerziellen Betri
 
 ## Apps
 
-Beide Android-Apps 0.5.2 / Build 12 starten mit gemeinsamen nativen Start-, Konto- und Menüoberflächen. Die Wiederaufnahme bestehender Fahrerortung wartet nicht mehr auf die Konto-Netzwerkanfrage; wiederholte Vordergrundereignisse teilen laufende Anfragen. Karten, Fahrten und Flotten sind weiterhin eingebettet; vollständige native Umstellung und physische Geräteprüfung bleiben offen. Einmalig die neuen internen APKs installieren. Eigene Konten mit E-Mail-Code; keine Fremdanmeldung. App Store und Google Play: bald verfügbar.
+Beide Android-Apps 0.5.3 / Build 13 starten mit gemeinsamen nativen Start-, Konto- und Menüoberflächen. Die Wiederaufnahme bestehender Fahrerortung wartet nicht mehr auf die Konto-Netzwerkanfrage; wiederholte Vordergrundereignisse teilen laufende Anfragen. Karten, Fahrten und Flotten sind weiterhin eingebettet; vollständige native Umstellung und physische Geräteprüfung bleiben offen. Einmalig die neuen internen APKs installieren. Eigene Konten mit E-Mail-Code; keine Fremdanmeldung. App Store und Google Play: bald verfügbar.
