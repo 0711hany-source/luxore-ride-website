@@ -4,7 +4,7 @@ Eigenständige Unternehmenswebsite, Kunden-App, Fahrer-App und Flottenverwaltung
 
 ## Technik
 
-Next.js auf Node.js/Vercel, unabhängige SQLite-kompatible Datenbank über libSQL, eigene Luxóre-Konten mit verifiziertem E-Mail-Code. Kein externer Plattform-Login. Karten und Routen: Mapbox. Der E-Mail-Versand über Resend ist vorbereitet.
+Next.js auf Node.js/Vercel, unabhängige SQLite-kompatible Datenbank über libSQL, eigene Luxóre-Konten mit verifiziertem E-Mail-Code. Kein externer Plattform-Login. Karten und Routen: Mapbox. Der kostenlose E-Mail-Versand über Resend ist mit Production verbunden; die Versanddomain ist verifiziert.
 
 ## Lokal starten
 
@@ -14,8 +14,10 @@ Prüfen: `node --test tests/*.test.ts tests/*.test.mjs`, `pnpm exec tsc --noEmit
 
 ## Veröffentlichung
 
-Die unabhängige Serverversion ist über das vorhandene GitHub-/Vercel-Projekt unter luxoreride.de veröffentlicht und live geprüft. Die kostenlose Turso-Datenbank ist geschützt mit Vercel Production verbunden; 18 Migrationen und 21 Geschäftstabellen sind angelegt. Die vollständige Bestandsdatenübernahme und Live-Prüfung fehlen noch. Bis zur kontrollierten Aktivierung zeigt die App einen klaren Umstellungshinweis und nimmt keine Online-Buchungen an. Sie verwendet keinen Ersatzserver. Anmeldung bleibt bis zum E-Mail-Versand deaktiviert. Einzelheiten: `docs/INDEPENDENT-DEPLOYMENT.md`.
+Die unabhängige Serverversion läuft über das vorhandene GitHub-/Vercel-Projekt unter luxoreride.de. Turso Production mit 18 Migrationen und 21 Geschäftstabellen sowie die kostenlose Resend-Verbindung sind eingerichtet. Der Nutzer hat einen Neustart mit neuen Profilen bestätigt; der alte Bestand bleibt unangetastet. Die Produktivschalter und Betreiberzuordnung sind vorbereitet, ihre konkrete Freigabe steht noch aus. Bis dahin bleibt der ehrliche Umstellungshinweis ohne Ersatzserver bestehen. Siehe `docs/INDEPENDENT-DEPLOYMENT.md` und `docs/ACTIVATION.md`.
+
+Der aktuelle Vercel-Hobby-Tarif erlaubt laut Anbieter keinen kommerziellen Betrieb; ein geeigneter Tarif und weitere Betriebsprüfungen sind vor dem offiziellen Start erforderlich.
 
 ## Apps
 
-Beide Apps verwenden ausschließlich https://luxoreride.de. Die Umstellung der fest eingebauten Adresse braucht einmalig neue APKs. Die interne Version 0.4.4 ist dafür vorgesehen; physische Geräteprüfung und offizielle Store-Freigaben bleiben erforderlich. App Store und Google Play: bald verfügbar.
+Beide Android-Apps 0.5.0 / Build 10 starten mit gemeinsamen nativen Start-, Konto- und Menüoberflächen. Karten, Fahrten und Flotten sind weiterhin eingebettet; vollständige native Umstellung und physische Geräteprüfung bleiben offen. Einmalig die neuen internen APKs installieren. Eigene Konten mit E-Mail-Code; keine Fremdanmeldung. App Store und Google Play: bald verfügbar.
