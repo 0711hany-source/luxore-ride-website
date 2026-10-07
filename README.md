@@ -14,7 +14,7 @@ Prüfen: `node --test tests/*.test.ts tests/*.test.mjs`, `pnpm exec tsc --noEmit
 
 ## Veröffentlichung
 
-Die unabhängige Serverversion läuft über das vorhandene GitHub-/Vercel-Projekt unter luxoreride.de. Turso Production mit 18 Migrationen und 21 Geschäftstabellen sowie die kostenlose Resend-Verbindung sind eingerichtet. Der Nutzer hat einen Neustart mit neuen Profilen bestätigt; der alte Bestand bleibt unangetastet. Die Produktivschalter und Betreiberzuordnung sind vorbereitet, ihre konkrete Freigabe steht noch aus. Bis dahin bleibt der ehrliche Umstellungshinweis ohne Ersatzserver bestehen. Siehe `docs/INDEPENDENT-DEPLOYMENT.md` und `docs/ACTIVATION.md`.
+Die unabhängige Serverversion läuft über das vorhandene GitHub-/Vercel-Projekt unter luxoreride.de. Turso Production mit 18 Migrationen und 21 Geschäftstabellen sowie die kostenlose Resend-Verbindung sind eingerichtet. Der Nutzer hat einen Neustart mit neuen Profilen bestätigt; der alte Bestand bleibt unangetastet. Konten und Buchungen sind nach konkreter Bestätigung aktiviert; der Live-Check bestätigt die Datenbankverbindung und den bereitstehenden E-Mail-Zugang. Die erste Betreiber-Anmelde-E-Mail wurde zugestellt; die persönliche Code-Verifizierung steht noch aus. Siehe `docs/INDEPENDENT-DEPLOYMENT.md` und `docs/ACTIVATION.md`.
 
 Der aktuelle Vercel-Hobby-Tarif erlaubt laut Anbieter keinen kommerziellen Betrieb; ein geeigneter Tarif und weitere Betriebsprüfungen sind vor dem offiziellen Start erforderlich.
 
