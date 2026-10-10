@@ -26,3 +26,5 @@ Interner Android-Stand: Kunden-App 0.6.6 / Build 20, Fahrer-App weiterhin 0.6.4 
 ## Native Kundenbuchung
 
 `CustomerBookingScreen` verbindet die bestätigte native Adressauswahl mit dem vorhandenen Strecken-/Buchungsserver. Ausstehende Anfragen werden vor dem Versand kontogebunden in SecureStore gesichert; nach verlorener Antwort oder Neustart wird dieselbe Quote mit unverändertem Inhalt bestätigt. Acht neue Controller- und vier tatsächliche Komponententests, insgesamt 336 Tests. Keine reale Production-Testfahrt. Kunden-APK 0.6.6 benötigt Installation; Fahrer-APK bleibt 0.6.4. Reale angemeldete Geräteprüfungen bleiben offen. Siehe `docs/NATIVE-BOOKING-066.md` und `docs/NATIVE-ADDRESS-SEARCH.md`.
+
+Server-Stornierung bestätigt nach verlorener Antwort dieselbe bereits stornierte eigene Fahrt, ohne Zeitstempel oder Protokoll zu duplizieren. Sechs echte Endpunkt-/libSQL-Tests, Gesamtstand 342 Tests; keine neue APK erforderlich. Details: `docs/BOOKING-CANCEL-RETRY.md`.
