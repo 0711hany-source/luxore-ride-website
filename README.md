@@ -36,3 +36,7 @@ Abholort und Ziel lassen sich auf einer festen nativen Mapbox-Karte wählen. Bes
 ## Zuverlässige Karten-/GPS-Auswahl · 11. Oktober
 
 Selbst gewählte gültige Karten-/GPS-Koordinaten bleiben bei ausgefallenem Reverse-Adressdienst oder erschöpftem Kontingent mit neutraler Bezeichnung bestätigbar. Textadressen und Sicherheits-/Speicherfehler werden weiterhin geprüft. Neun neue Endpunkt-/SQLite-Tests, insgesamt 366 Tests bestanden. Serveränderung ohne neue APK oder Budgetwechsel. Details: `docs/COORDINATE-GEOCODING-RECOVERY.md`.
+
+## Native Kunden-Live-Karte: vorbereiteter Datenfluss
+
+Kontogebundener Controller verwirft verspätete Antworten, schützt die gewählte Fahrt und zeigt nur frische zugeordnete GPS-Daten beziehungsweise maximal drei anonyme Suchfahrzeuge. Bei Netzverlust keine Live-Behauptung, bei verlorener Anmeldung keine alten Fahrtdetails. 16 zusätzliche Tests. Noch keine Anbindung an App.tsx oder neue APK; die Kunden-Live-Karte bleibt eingebettet. Details: `docs/NATIVE-CUSTOMER-LIVE-STATE.md`.
