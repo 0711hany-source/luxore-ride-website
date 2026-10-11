@@ -32,3 +32,7 @@ Server-Stornierung bestätigt nach verlorener Antwort dieselbe bereits storniert
 ## Native Kartenpunktwahl · 10. Oktober
 
 Abholort und Ziel lassen sich auf einer festen nativen Mapbox-Karte wählen. Bestätigung erst nach geladenen Karten, Straßenmaßstab und Ende der Kamerabewegung; Verschieben löst keine Adresssuche aus. 15 neue Prüfungen, insgesamt 357 Tests, TypeScript und gezieltes Lint bestanden. Kunden-APK 0.6.7 benötigt Installation, Fahrer-APK bleibt 0.6.4. Native Kunden-Live-Karte und reale angemeldete Geräteprüfungen bleiben offen. Details: `docs/NATIVE-MAP-POINT-067.md`.
+
+## Zuverlässige Karten-/GPS-Auswahl · 11. Oktober
+
+Selbst gewählte gültige Karten-/GPS-Koordinaten bleiben bei ausgefallenem Reverse-Adressdienst oder erschöpftem Kontingent mit neutraler Bezeichnung bestätigbar. Textadressen und Sicherheits-/Speicherfehler werden weiterhin geprüft. Neun neue Endpunkt-/SQLite-Tests, insgesamt 366 Tests bestanden. Serveränderung ohne neue APK oder Budgetwechsel. Details: `docs/COORDINATE-GEOCODING-RECOVERY.md`.
