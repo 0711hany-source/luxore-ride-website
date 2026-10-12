@@ -45,3 +45,5 @@ Kontogebundener Controller verwirft verspätete Antworten, schützt die gewählt
 ## Native Live-Ansicht · 11. Oktober
 
 Native Kunden-Live-Karte mit eigener Fahrtauswahl, geschütztem SDK-Start, festen wischbaren Details und nativem Sicherheitsdialog integriert. Neun zusätzliche Prüfungen, Gesamtstand 391 Tests. Hintergrund stoppt tatsächliche Leseanfragen und Polls; veraltete Marker/Kontakte werden auch bei hängender Antwort entfernt. Zusätzliche Bordbestellungen während der Fahrt sind nativ mit vollständiger Wischbestätigung, einmaliger Anfragequittung und kontogebundener geschützter Wiederholung umgesetzt. Angemeldete physische Mehrgeräteprüfung bleibt offen. Details: `docs/NATIVE-CUSTOMER-BOARD-069.md`. Kunden-APK 0.6.9 benötigt Installation; Fahrer bleibt 0.6.4. Details: `docs/NATIVE-CUSTOMER-LIVE-068.md`.
+
+Fahrerfreigaben in der Disposition prüfen Konten und aktuelle Flottenrechte im gemeinsamen Schreibzugriff. Freigabe, Angebotsrücknahme und Audit speichern atomar; wiederholte Freigabe erhält bestehende Online-/GPS-Schichten. Details: `docs/ATOMIC-DRIVER-APPROVAL.md`. Keine neue APK für diese Serverkorrektur.
