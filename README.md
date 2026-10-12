@@ -52,3 +52,6 @@ Fahrerfreigaben in der Disposition prüfen Konten und aktuelle Flottenrechte im 
 ## Native Disposition · 12. Oktober
 
 Eigene native Dispositionsübersicht mit Flottenauswahl, Tagesumsatz, Team und aktuellen Fahrten. Festes Fahrerfenster bestätigt Freigaben ausschließlich per Wischen, aktuelle Serverrechte entscheiden. Netzverlust/Hintergrund/alte Antworten und unklare Speicherantworten sind abgesichert. Zwölf neue Controller-/Komponententests, insgesamt 425 Tests bestanden. Fahrer-APK 0.7.0 benötigt Installation; Kunden-APK bleibt 0.6.9. Nicht zugeordnete Profile und erweiterte Teamverwaltung bleiben im eigenen Webportal, physische angemeldete Geräteprüfungen offen. Details: `docs/NATIVE-OPERATIONS-070.md`.
+
+
+Stellvertretungswahl und Besitzerübergabe prüfen die aktuellen Leitungsrechte/Kontosperren im gleichen Schreibzugriff wie Änderung und Audit. Speicherfehler hinterlassen keine teilweise geänderten Rechte; GPS-Schichten und bestehende Einsatz-/Zahlungssperren bleiben erhalten. Zehn zusätzliche echte Endpunkt-/libSQL-Tests, insgesamt 435 Tests. Keine neue APK oder Migration für diesen Serverfix; Details: `docs/ATOMIC-FLEET-LEADERSHIP.md`.
