@@ -1,3 +1,3 @@
-Independent source snapshot based on 7e111d03402e42adb832a1a06698eb994b8feca0
-Archive sha256: b4466a96a437a8cd78df81f42583f9ecea9a9cba67ce8396093acaa58092b872
+Independent source snapshot based on d0b9bb33efd3f43166423d4bbe02c8ab6f2f73a3
+Archive sha256: 046334fb0efdaa8568f4702c46e9b03d45a4df2a76bb314c09a499cd1c01d4a4
 Website, API and own account authentication use luxoreride.de.
