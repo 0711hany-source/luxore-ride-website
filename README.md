@@ -60,3 +60,6 @@ Stellvertretungswahl und Besitzerübergabe prüfen die aktuellen Leitungsrechte/
 ## Flotteneinladungen · 13. Oktober
 
 Gültige Beitrittswiederholung bestätigt vorhandene Mitgliedschaft ohne Rücksetzung von Fahrzeug, Fahrerfreigabe oder GPS-Schicht. Einladung, Beitritt und Audit speichern mit aktuellen Konten-/Flottenrechten gemeinsam; Speicherfehler rollen Änderungen zurück. Zehn neue Endpunkt-/libSQL-Tests, insgesamt 445 Prüfungen bestanden. Keine Migration oder APK nötig; native Einladungsoberfläche und physische Geräteprüfungen bleiben offen. Details: `docs/FLEET-INVITE-RETRY.md`.
+
+
+Teamzuordnung und Entfernung prüfen aktuelle Flotten-/Kontenrechte im gemeinsamen Schreibzugriff mit Fahrerreset, Angebotsrücknahme und Audit. Verlorene Leitungsrechte oder gelöschte Zielflotten können keine veraltete Änderung mehr erlauben. Zehn zusätzliche echte Endpunkt-/libSQL-Tests, insgesamt 455 Tests. Keine neue APK oder Migration; native Einladung-/Teamoberfläche bleibt offen. Details: `docs/ATOMIC-FLEET-MEMBERSHIP.md`.
