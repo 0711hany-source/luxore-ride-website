@@ -55,3 +55,8 @@ Eigene native Dispositionsübersicht mit Flottenauswahl, Tagesumsatz, Team und a
 
 
 Stellvertretungswahl und Besitzerübergabe prüfen die aktuellen Leitungsrechte/Kontosperren im gleichen Schreibzugriff wie Änderung und Audit. Speicherfehler hinterlassen keine teilweise geänderten Rechte; GPS-Schichten und bestehende Einsatz-/Zahlungssperren bleiben erhalten. Zehn zusätzliche echte Endpunkt-/libSQL-Tests, insgesamt 435 Tests. Keine neue APK oder Migration für diesen Serverfix; Details: `docs/ATOMIC-FLEET-LEADERSHIP.md`.
+
+
+## Flotteneinladungen · 13. Oktober
+
+Gültige Beitrittswiederholung bestätigt vorhandene Mitgliedschaft ohne Rücksetzung von Fahrzeug, Fahrerfreigabe oder GPS-Schicht. Einladung, Beitritt und Audit speichern mit aktuellen Konten-/Flottenrechten gemeinsam; Speicherfehler rollen Änderungen zurück. Zehn neue Endpunkt-/libSQL-Tests, insgesamt 445 Prüfungen bestanden. Keine Migration oder APK nötig; native Einladungsoberfläche und physische Geräteprüfungen bleiben offen. Details: `docs/FLEET-INVITE-RETRY.md`.
