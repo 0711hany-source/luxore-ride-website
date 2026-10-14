@@ -78,3 +78,8 @@ Feste native Auswahl/Aufhebung einer Stellvertretung aus dem tatsächlichen Team
 ## Native Teamverwaltung · 14. Oktober
 
 Feste native Mitarbeiterzuordnung/Entfernung in der Disposition mit tatsächlichem Team, bestehenden Rollen und Einsatzsperren. Zuordnung nur vorhandener Plattformbetreiber, Entfernung eigene Leitung/Betreiber; vollständiges Wischen, gemeinsamer Schutz vor parallelen/unklaren Änderungen. Acht Controller-/drei tatsächliche Komponententests, insgesamt 486. Fahrer-Update 0.7.3 erforderlich, Kunde bleibt 0.6.9; physische angemeldete Geräteprüfung offen. Details: `docs/NATIVE-TEAM-073.md`.
+
+
+## Zuverlässige Flottengründung · 14. Oktober
+
+Neue Flotte, Besitzerzuordnung und Audit speichern mit aktuellen Konten-/Leitungs-/Einsatzprüfungen atomar. Identischer aktueller Erstellungsretry mit derselben UUID verändert keine spätere GPS-Schicht und erzeugt keine zweite Flotte oder Auditkopie; andere Namen/Besitzer bleiben Konflikt. Zehn neue echte Endpunkt-/libSQL-Prüfungen, insgesamt 496 Tests. Keine neue APK oder Migration für diesen Serverfix; natives Gründungsformular und physische Geräteprüfungen bleiben offen. Details: `docs/ATOMIC-FLEET-CREATION.md`.
