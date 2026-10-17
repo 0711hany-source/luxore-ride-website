@@ -123,3 +123,6 @@ Serverstand 17. Oktober: Authentifizierter Schichtstart prüft aktuelle Konto-/F
 
 
 Serverstand 17. Oktober: Authentifizierter GPS-Heartbeat prüft aktuelle Konto-/Fahrerfreigabe im Schreibzugriff. Gespeicherte Positionen bleiben trotz späterem Dispatchfehler bestätigt; Session-/Qualitäts-/Fahrzeugguards erhalten, keine Queue-Erfolgsgarantie. 662 Tests, keine neue APK/Migration. Grenzen und Nachweise: docs/ATOMIC-DRIVER-HEARTBEAT.md.
+
+
+Serverstand 17. Oktober: Nativer Capability-GPS-Upload prüft aktuelle Konto-/Capabilityrechte unter der GPS-Schreibsperre. Gespeicherte Punkte bleiben von späteren Dispatch-/Angebotslesefehlern getrennt; unbekannte Angebotsdaten erzeugen keine erfundene Rücknahme. 681 Tests, keine neue APK/Migration. Grenzen und Nachweise: docs/ATOMIC-NATIVE-UPLOAD.md.
