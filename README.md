@@ -120,3 +120,6 @@ Authentifizierter Fahrer-Schichtstopp prüft aktuelle Session/Konto/Freigabe und
 
 
 Serverstand 17. Oktober: Authentifizierter Schichtstart prüft aktuelle Konto-/Fahrerfreigabe und erwarteten Sessionstand atomar mit bestehender Session-/Capability-Anlage. Überholte konkurrierende Starts erhalten 409, aktuelle Sperren 403. 647 Tests; keine neue APK oder Migration. Grenzen und Nachweise: docs/ATOMIC-DRIVER-ONLINE.md.
+
+
+Serverstand 17. Oktober: Authentifizierter GPS-Heartbeat prüft aktuelle Konto-/Fahrerfreigabe im Schreibzugriff. Gespeicherte Positionen bleiben trotz späterem Dispatchfehler bestätigt; Session-/Qualitäts-/Fahrzeugguards erhalten, keine Queue-Erfolgsgarantie. 662 Tests, keine neue APK/Migration. Grenzen und Nachweise: docs/ATOMIC-DRIVER-HEARTBEAT.md.
